@@ -5,6 +5,7 @@
 
 ```typescript
 import { defineSchema, defineTable } from "convex/server";
+// This is for validator (data types)
 import { v } from "convex/values";
 
 export default defineSchema({
@@ -28,6 +29,7 @@ import { mutation, query } from "./_generated/server";
 export const getTasks = query({
 	args: {},
 	handler: async (ctx, args) => {
+        // ctx = context
 		const tasks = await ctx.db.query("tasks").collect();
 		return tasks;
 	},
