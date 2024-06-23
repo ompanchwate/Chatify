@@ -16,5 +16,12 @@ export default defineSchema({
         groupName : v.optional(v.string()),
         groupImage : v.optional(v.string()),
         admin: v.optional(v.string()),
-    })
+    }),
+
+    messages : defineTable({
+        conversation: v.id("conversations"),
+        sender: v.string(), // just for OPENAI part eg. (Chatgpt)
+        content: v.string(),
+        messageType: v.union(v.literal("text"), v.literal("image"), v.literal("video")),
+    }).index("by_conversation", ["conversation"])
 })

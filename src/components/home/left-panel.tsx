@@ -5,10 +5,13 @@ import { conversations } from "@/dummy-data/db";
 import Conversation from "./conversation";
 import { UserButton } from "@clerk/nextjs";
 import UserListDialog from "./user-list-dialog";
-import { useConvexAuth } from "convex/react";
+import { useConvexAuth, useQuery } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 
 const LeftPanel = () => {
     const { isAuthenticated } = useConvexAuth(); // to check whether the user is authenticated
+    // get all conversations
+    const conversations = useQuery(api.conversation.getMyConversations, isAuthenticated ? undefined: "skip");
 
     return (
         <div className='w-1/4 border-gray-600 border-r'>
