@@ -14,6 +14,7 @@ const RightPanel = () => {
 
 	const conversationName = selectedConversation.groupName || selectedConversation.name;
 	const conversationImage = selectedConversation.groupImage || selectedConversation.image;
+	
 	// const isGroup = true;
 
 	return (
@@ -31,7 +32,7 @@ const RightPanel = () => {
 						<div className='flex flex-col'>
 							<p>{conversationName}</p>
 							{/* if group, we can see the members  */}
-							{selectedConversation.isGroup && <GroupMembersDialog />}
+							{selectedConversation.isGroup && <GroupMembersDialog selectedConversation = {selectedConversation} />}
 						</div>
 					</div>
 

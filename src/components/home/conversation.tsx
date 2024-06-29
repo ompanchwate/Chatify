@@ -14,8 +14,9 @@ const Conversation = ({ conversation }: { conversation: any }) => {
 	const lastMessageType = lastMessage?.messageType;
 	const me = useQuery(api.users.getMe)
 
-	const {setSelectedConversation, selectedConversation} = useConversationStore();
+	const {setSelectedConversation, selectedConversation} = useConversationStore(); // zustand hook for selectConversation
 	const activeBgClass = selectedConversation?._id === conversation._id
+	// console.log(conversation)
 
 	return (
 		<>
