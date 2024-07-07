@@ -6,9 +6,13 @@ import MessageContainer from "./message-container";
 import ChatPlaceHolder from "@/components/home/chat-placeholder";
 import GroupMembersDialog from "./group-members-dialog";
 import { useConversationStore } from "@/store/chat-store";
+import { useConvexAuth } from "convex/react";
 
 const RightPanel = () => {
 	const { selectedConversation, setSelectedConversation } = useConversationStore();
+	const {isLoading} = useConvexAuth();
+
+	if(isLoading) return null;
 	// If none of the chat is selected then , default page is been displayed - chatplaceholder
 	if (!selectedConversation) return <ChatPlaceHolder />;
 
