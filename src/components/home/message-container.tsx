@@ -19,7 +19,8 @@ const MessageContainer = () => {
 					<div key={msg._id}>
 						<ChatBubble 
 						me={me}
-						message={msg}/>
+						message={msg}
+						previousMessage={idx > 0 ? messages[idx-1] : undefined}/>
 					</div>
 				))}
 			</div>
