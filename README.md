@@ -15,6 +15,12 @@
 5. Kick user from the group
 6. Send Text, images and videos.
 
+### SCREENSHOTS
+![image](https://github.com/ompanchwate/Chatify/assets/86113092/0240b391-9809-4422-98f5-10b08e387b5f)
+![image](https://github.com/ompanchwate/Chatify/assets/86113092/2fd7a8b8-2b7d-43a5-ad89-1de1522d6b6b)
+![image](https://github.com/ompanchwate/Chatify/assets/86113092/e85ab50b-d7ca-4239-9aa2-cdaa29ccf347)
+![image](https://github.com/ompanchwate/Chatify/assets/86113092/8052e5ad-59c6-45ef-9a81-afde5dda63f7)
+
 ## Getting Started
 
 First, run the development server:
