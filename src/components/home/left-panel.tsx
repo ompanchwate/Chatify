@@ -40,7 +40,7 @@ const LeftPanel = () => {
                         {/* If directly UserListDialog is called then it throws error it executes the queries without being authenticated */}
                         {isAuthenticated && <UserListDialog/>}
                         <ThemeSwitch /> {/* Theme - dark/light */}
-                        <LogOut size={20} className='cursor-pointer' /> {/* logout ICON */}
+                        {/* <LogOut size={20} className='cursor-pointer' /> logout ICON */}
                     </div>
                 </div>
                 <div className='p-3 flex items-center'>
