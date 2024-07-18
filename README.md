@@ -1,11 +1,13 @@
 ## ChatApp
 
 ### Technologies used 
-1. NextJS
-2. TailwindCSS
-3. ShadCn
-4. Convex
-5. Clerk - Signup
+<p align="">
+  <img src="https://raw.githubusercontent.com/vercel/vercel/main/packages/frameworks/logos/next.svg" alt="NextJS" width="100" height="100" />
+  <img src="https://github.com/user-attachments/assets/9b5f3060-1906-449d-8514-326ea7936b49" alt="TailwindCSS" width="140" height="100" />
+  <img src="https://github.com/user-attachments/assets/2672e46b-ce91-40fc-bd77-5913cd7f7062" alt="ShadCn" width="100" height="100" />
+  <img src="https://avatars.githubusercontent.com/u/81530787?s=200&v=4" alt="Convex" width="100" height="100" />
+  <img src="https://scontent.fpnq2-1.fna.fbcdn.net/v/t39.30808-6/362631324_664757959011046_7646744653038212136_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=JdUJleGW5R8Q7kNvgHgAbj4&_nc_ht=scontent.fpnq2-1.fna&oh=00_AYBcLhv_6OyOYi6kp4m6Nh0V2u_IaetdR0sXaa2uIT3YIw&oe=669F58BD" alt="Clerk" width="100" height="100" />
+</p>
 
 ### Features 
 1. Signup/Login using Clerk
